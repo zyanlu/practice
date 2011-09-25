@@ -6,16 +6,6 @@
 #include <ctime>
 using namespace std;
 
-/*       ++
- *       -+
- * +     *+
- * -
- * *
- *
- *
- *
- */
-
 class node {
 public:
 	node(const char* cop, int value) {
@@ -96,6 +86,8 @@ void pstack(vector<vector<node> > &st) {
 	cout << endl;
 }
 
+
+
 void parse(string &str) {
 	int pos = str.find(" = ");
 	string res = str.substr(0, pos);
@@ -118,12 +110,13 @@ void parse(string &str) {
 			} else if (tmp.compare("(") == 0) {
 				pushed = 1;
 			} else if (tmp.compare(")") == 0 && result_stack.size() >= 2) {
-				vector<node> prev = result_stack.back();
-				result_stack.pop_back();
-				vector<node> prev2 = result_stack.back();
-				result_stack.pop_back();
+				vector<node> &prev = result_stack.at(result_stack.size() -1);
+				vector<node> &prev2 = result_stack.at(result_stack.size()-2);
 				vector<node> res;
 				node::calc(res,prev2,prev);
+
+				result_stack.pop_back();
+				result_stack.pop_back();
 				result_stack.push_back(res);
 				//pstack(result_stack);
 			}
@@ -141,9 +134,10 @@ void parse(string &str) {
 					pushed --;
 				}
 			} else if (result_stack.size() != 0) {
-				vector<node> prev = result_stack.back();
+				vector<node> &prev = result_stack.back();
 				vector<node> res;
 				node::calc(res, prev, tmpcast,"");
+
 				result_stack.pop_back();
 				result_stack.push_back(res);
 				//pstack(result_stack);
@@ -204,14 +198,27 @@ void parse(string &str) {
 	}
 
 }
+
+/*
+void fn(vector<string*> &v){
+	string s("a");
+	//string *s = new string("a");
+	v.push_back(&s);
+}*/
+
+
 int main(){
-	time_t seconds;
-	seconds = time (NULL);
+	clock_t seconds;
+	seconds = clock ();
 	string line = "214 = 7 7 7 7 (3 3 3 3 3 (3 3))";
 	parse(line);
-
-	cout << (time(NULL) - seconds) << endl;
+	//vector<string*> v;
+	//fn(v);
+	//string *s1 = v.back();
+	//cout << *s1;
+	cout << (clock() - seconds) << endl;
 }
+
 int main2() {
 
 
