@@ -1,0 +1,800 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 11.11      0.13     0.13      771     0.17     0.58  node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*)
+ 10.26      0.25     0.12    59940     0.00     0.00  node::node(std::string&, int, char)
+  7.69      0.34     0.09 21861033     0.00     0.00  node* std::copy<node*, node*>(node*, node*, node*)
+  7.69      0.43     0.09 21801090     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector()
+  7.69      0.52     0.09 21734406     0.00     0.00  __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&)
+  6.84      0.60     0.08 21735075     0.00     0.00  __gnu_cxx::new_allocator<node>::max_size() const
+  6.84      0.68     0.08                             __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::max_size() const
+  5.98      0.75     0.07 43470150     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator*() const
+  5.98      0.82     0.07 21920976     0.00     0.00  node::operator=(node const&)
+  5.98      0.89     0.07      854     0.08     0.27  void std::_Destroy_aux<false>::__destroy<node*>(node*, node*)
+  5.13      0.95     0.06 21734342     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const
+  4.27      1.00     0.05                             __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::base() const
+  4.27      1.05     0.05                             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::operator[](unsigned int)
+  2.56      1.08     0.03 21861049     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  2.56      1.11     0.03        3    10.00    16.65  void std::_Construct<node, node>(node*, node const&)
+  1.71      1.13     0.02 21861033     0.00     0.00  node::node(node const&)
+  0.85      1.14     0.01    59943     0.00     0.00  __gnu_cxx::new_allocator<node>::construct(node*, node const&)
+  0.85      1.15     0.01                             bool __gnu_cxx::operator!=<node const*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&)
+  0.85      1.16     0.01                             std::basic_ios<char, std::char_traits<char> >::fail() const
+  0.85      1.17     0.01                             std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      1.17     0.00   123766     0.00     0.00  std::vector<node, std::allocator<node> >::size() const
+  0.00      1.17     0.00   120454     0.00     0.00  std::vector<node, std::allocator<node> >::operator[](unsigned int)
+  0.00      1.17     0.00    59943     0.00     0.00  std::vector<node, std::allocator<node> >::push_back(node const&)
+  0.00      1.17     0.00    59940     0.00     0.00  node::calc(node&)
+  0.00      1.17     0.00    59940     0.00     0.00  void std::_Destroy<std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00    59940     0.00     0.00  std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char)
+  0.00      1.17     0.00     1765     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator()
+  0.00      1.17     0.00     1682     0.00     0.00  __gnu_cxx::new_allocator<node>::allocate(unsigned int, void const*)
+  0.00      1.17     0.00     1542     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::__normal_iterator(std::vector<node, std::allocator<node> >* const&)
+  0.00      1.17     0.00      987     0.00     0.00  std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const
+  0.00      1.17     0.00      981     0.00     0.00  __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator*() const
+  0.00      1.17     0.00      911     0.00     0.49  node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*)
+  0.00      1.17     0.00      911     0.00     0.42  std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00      854     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int)
+  0.00      1.17     0.00      854     0.00     0.00  void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >)
+  0.00      1.17     0.00      854     0.00     0.27  void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&)
+  0.00      1.17     0.00      841     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int)
+  0.00      1.17     0.00      797     0.00     0.00  __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::destroy(std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00      784     0.00     0.00  std::allocator<node>::~allocator()
+  0.00      1.17     0.00      784     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_Vector_impl::~_Vector_impl()
+  0.00      1.17     0.00      784     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::~_Vector_base()
+  0.00      1.17     0.00      784     0.00     0.27  std::vector<node, std::allocator<node> >::~vector()
+  0.00      1.17     0.00      771     0.00     0.00  __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::deallocate(std::vector<node, std::allocator<node> >*, unsigned int)
+  0.00      1.17     0.00      771     0.00     0.00  std::vector<node, std::allocator<node> >::capacity() const
+  0.00      1.17     0.00      771     0.00     0.00  std::allocator<node>::allocator(std::allocator<node> const&)
+  0.00      1.17     0.00      771     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl(std::allocator<node> const&)
+  0.00      1.17     0.00      771     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&)
+  0.00      1.17     0.00      771     0.00     0.42  std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&)
+  0.00      1.17     0.00      740     0.00     0.62  node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string)
+  0.00      1.17     0.00      280     0.00     0.00  __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::operator*() const
+  0.00      1.17     0.00      143     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const
+  0.00      1.17     0.00      140     0.00     0.00  __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::__normal_iterator(node const* const&)
+  0.00      1.17     0.00      140     0.00     0.00  node* std::__uninitialized_copy<false>::uninitialized_copy<node*, node*>(node*, node*, node*)
+  0.00      1.17     0.00      140     0.00     0.00  node* std::__uninitialized_copy_a<node*, node*, node>(node*, node*, node*, std::allocator<node>&)
+  0.00      1.17     0.00       73     0.00     0.00  std::vector<node, std::allocator<node> >* std::__copy_move_backward_a2<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00       70     0.00     0.27  std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&)
+  0.00      1.17     0.00       70     0.00     0.00  std::vector<node, std::allocator<node> >::end()
+  0.00      1.17     0.00       70     0.00     0.00  std::vector<node, std::allocator<node> >::begin()
+  0.00      1.17     0.00       33     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const
+  0.00      1.17     0.00       29     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int)
+  0.00      1.17     0.00       18     0.00     0.18  __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*)
+  0.00      1.17     0.00       15     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back()
+  0.00      1.17     0.00       13     0.00     0.00  __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&)
+  0.00      1.17     0.00       13     0.00     0.00  std::allocator<node>::allocator()
+  0.00      1.17     0.00       13     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl()
+  0.00      1.17     0.00       13     0.00     0.00  std::_Vector_base<node, std::allocator<node> >::_Vector_base()
+  0.00      1.17     0.00       13     0.00     0.00  std::vector<node, std::allocator<node> >::vector()
+  0.00      1.17     0.00       13     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::pop_back()
+  0.00      1.17     0.00       12     0.00     0.09  str2int(std::string&)
+  0.00      1.17     0.00       12     0.00     0.09  void std::_Destroy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&)
+  0.00      1.17     0.00       10     0.00     0.00  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_get_Tp_allocator()
+  0.00      1.17     0.00        9     0.00     0.00  __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::base() const
+  0.00      1.17     0.00        6     0.00     0.00  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const
+  0.00      1.17     0.00        6     0.00     8.32  std::vector<node, std::allocator<node> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00        6     0.00     0.05  node* std::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*)
+  0.00      1.17     0.00        6     0.00    11.52  node* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, node>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, std::allocator<node>&)
+  0.00      1.17     0.00        6     0.00    11.52  node* std::__uninitialized_move_a<node*, node*, std::allocator<node> >(node*, node*, node*, std::allocator<node>&)
+  0.00      1.17     0.00        4     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00        4     0.00     0.13  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int)
+  0.00      1.17     0.00        4     0.00     0.00  void std::_Destroy<node*>(node*, node*)
+  0.00      1.17     0.00        4     0.00     0.00  void std::_Destroy<node*, node>(node*, node*, std::allocator<node>&)
+  0.00      1.17     0.00        4     0.00     0.00  void std::_Destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  0.00      1.17     0.00        3     0.00     0.00  node::node(char const*, int)
+  0.00      1.17     0.00        3     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::difference_type __gnu_cxx::operator-<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&)
+  0.00      1.17     0.00        3     0.00     0.18  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_allocate(unsigned int)
+  0.00      1.17     0.00        3     0.00    23.36  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&)
+  0.00      1.17     0.00        2     0.00   325.75  node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&)
+  0.00      1.17     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator++()
+  0.00      1.17     0.00        2     0.00    35.04  std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&)
+  0.00      1.17     0.00        1     0.00   707.43  parse(std::string&)
+  0.00      1.17     0.00        1     0.00     0.00  std::allocator<std::vector<node, std::allocator<node> > >::allocator()
+  0.00      1.17     0.00        1     0.00     0.00  std::allocator<std::vector<node, std::allocator<node> > >::~allocator()
+  0.00      1.17     0.00        1     0.00     0.00  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::_Vector_impl()
+  0.00      1.17     0.00        1     0.00     0.00  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::~_Vector_impl()
+  0.00      1.17     0.00        1     0.00     0.00  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_base()
+  0.00      1.17     0.00        1     0.00     0.13  std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.85% of 1.17 seconds
+
+index % time    self  children    called     name
+                0.00    0.71       1/1           _fu10___ZSt4cout [2]
+[1]     60.5    0.00    0.71       1         parse(std::string&) [1]
+                0.00    0.65       2/2           node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+                0.00    0.04       1/2           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+                0.00    0.01      35/784         std::vector<node, std::allocator<node> >::~vector() [11]
+                0.00    0.01      13/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+                0.00    0.00       8/740         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+                0.00    0.00      12/12          str2int(std::string&) [44]
+                0.00    0.00       3/59943       std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+                0.00    0.00      12/15          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back() [57]
+                0.00    0.00      13/29          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int) [53]
+                0.00    0.00       3/21920976     node::operator=(node const&) [23]
+                0.00    0.00   59050/120454      std::vector<node, std::allocator<node> >::operator[](unsigned int) [64]
+                0.00    0.00      21/33          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const [90]
+                0.00    0.00      13/13          std::vector<node, std::allocator<node> >::vector() [94]
+                0.00    0.00      13/13          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::pop_back() [95]
+                0.00    0.00       3/3           node::node(char const*, int) [103]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     60.5    0.00    0.71                 _fu10___ZSt4cout [2]
+                0.00    0.71       1/1           parse(std::string&) [1]
+-----------------------------------------------
+                0.00    0.65       2/2           parse(std::string&) [1]
+[3]     55.7    0.00    0.65       2         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+                0.00    0.45     732/740         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+                0.00    0.20     732/784         std::vector<node, std::allocator<node> >::~vector() [11]
+                0.00    0.00    1464/120454      std::vector<node, std::allocator<node> >::operator[](unsigned int) [64]
+                0.00    0.00     734/123766      std::vector<node, std::allocator<node> >::size() const [63]
+-----------------------------------------------
+                0.00    0.00       8/740         parse(std::string&) [1]
+                0.00    0.45     732/740         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+[4]     39.3    0.00    0.46     740         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+                0.00    0.31     742/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+                0.12    0.00   59940/59940       node::node(std::string&, int, char) [13]
+                0.00    0.03   59940/59943       std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+                0.00    0.00   59940/21920976     node::operator=(node const&) [23]
+                0.00    0.00   62160/123766      std::vector<node, std::allocator<node> >::size() const [63]
+                0.00    0.00   59940/120454      std::vector<node, std::allocator<node> >::operator[](unsigned int) [64]
+                0.00    0.00   59940/59940       node::calc(node&) [65]
+-----------------------------------------------
+                0.00    0.07     140/911         node* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, node>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, std::allocator<node>&) [24]
+                0.00    0.38     771/911         std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [7]
+[5]     38.4    0.00    0.45     911         node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*) [5]
+                0.13    0.32     771/771         node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+-----------------------------------------------
+                0.13    0.32     771/771         node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*) [5]
+[6]     38.4    0.13    0.32     771         node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+                0.09    0.00 21734304/21734406     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+                0.09    0.00 21734304/21801090     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector() [15]
+                0.08    0.00 21735075/21735075     __gnu_cxx::new_allocator<node>::max_size() const [18]
+                0.06    0.00 21734304/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+-----------------------------------------------
+                0.00    0.06     140/911         std::vector<node, std::allocator<node> >* std::__uninitialized_copy_a<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&) [27]
+                0.00    0.32     771/911         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+[7]     32.5    0.00    0.38     911         std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [7]
+                0.00    0.38     771/911         node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*) [5]
+-----------------------------------------------
+                0.00    0.00       3/771         void std::_Construct<std::vector<node, std::allocator<node> >, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [43]
+                0.00    0.01      13/771         parse(std::string&) [1]
+                0.00    0.01      13/771         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::~new_allocator() [40]
+                0.00    0.31     742/771         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[8]     27.5    0.00    0.32     771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+                0.00    0.32     771/911         std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [7]
+                0.00    0.00     771/917         std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00    1542/123766      std::vector<node, std::allocator<node> >::size() const [63]
+                0.00    0.00     771/771         std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&) [83]
+                0.00    0.00     771/1765        std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator() [68]
+                0.00    0.00     771/771         std::vector<node, std::allocator<node> >::capacity() const [80]
+-----------------------------------------------
+                0.07    0.16     854/854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&) [10]
+[9]     19.6    0.07    0.16     854         void std::_Destroy_aux<false>::__destroy<node*>(node*, node*) [9]
+                0.09    0.07 21861033/21861033     node* std::copy<node*, node*>(node*, node*, node*) [12]
+-----------------------------------------------
+                0.00    0.02      70/854         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.21     784/854         std::vector<node, std::allocator<node> >::~vector() [11]
+[10]    19.6    0.00    0.23     854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&) [10]
+                0.07    0.16     854/854         void std::_Destroy_aux<false>::__destroy<node*>(node*, node*) [9]
+-----------------------------------------------
+                0.00    0.00       1/784         _fu9___ZSt4cout [31]
+                0.00    0.00       4/784         void std::_Destroy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&) [45]
+                0.00    0.00      12/784         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [41]
+                0.00    0.01      35/784         parse(std::string&) [1]
+                0.00    0.20     732/784         node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+[11]    18.0    0.00    0.21     784         std::vector<node, std::allocator<node> >::~vector() [11]
+                0.00    0.21     784/854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&) [10]
+                0.00    0.00     784/1765        std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator() [68]
+                0.00    0.00     784/784         std::_Vector_base<node, std::allocator<node> >::~_Vector_base() [78]
+-----------------------------------------------
+                0.09    0.07 21861033/21861033     void std::_Destroy_aux<false>::__destroy<node*>(node*, node*) [9]
+[12]    13.7    0.09    0.07 21861033         node* std::copy<node*, node*>(node*, node*, node*) [12]
+                0.07    0.00 21861033/21920976     node::operator=(node const&) [23]
+-----------------------------------------------
+                0.12    0.00   59940/59940       node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[13]    10.3    0.12    0.00   59940         node::node(std::string&, int, char) [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     9.8    0.08    0.04                 __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::max_size() const [14]
+                0.04    0.00 21735075/43470150     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator*() const [22]
+-----------------------------------------------
+                0.00    0.00   66786/21801090     node* std::__uninitialized_copy<false>::uninitialized_copy<node*, node*>(node*, node*, node*) [48]
+                0.09    0.00 21734304/21801090     node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+[15]     7.7    0.09    0.00 21801090         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector() [15]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base() [51]
+-----------------------------------------------
+                0.00    0.00       3/21734406     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back() [57]
+                0.00    0.00      13/21734406     std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00      16/21734406     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int) [53]
+                0.00    0.00      70/21734406     std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.09    0.00 21734304/21734406     node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+[16]     7.7    0.09    0.00 21734406         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+                0.00    0.00     140/280         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::operator*() const [84]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     7.3    0.05    0.04                 __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::base() const [17]
+                0.04    0.00 21735075/43470150     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator*() const [22]
+-----------------------------------------------
+                0.08    0.00 21735075/21735075     node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+[18]     6.8    0.08    0.00 21735075         __gnu_cxx::new_allocator<node>::max_size() const [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     6.8    0.05    0.03                 std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::operator[](unsigned int) [19]
+                0.03    0.00 21801090/21861049     std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+-----------------------------------------------
+                0.00    0.04       1/2           parse(std::string&) [1]
+                0.00    0.04       1/2           _fu9___ZSt4cout [31]
+[20]     6.0    0.00    0.07       2         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+                0.00    0.07       3/3           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.00      10/13          __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [58]
+                0.00    0.00       3/29          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int) [53]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_base() [109]
+                0.00    0.00       1/10          std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_get_Tp_allocator() [96]
+-----------------------------------------------
+                0.00    0.07       3/3           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+[21]     6.0    0.00    0.07       3         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.07       6/6           node* std::__uninitialized_move_a<node*, node*, std::allocator<node> >(node*, node*, node*, std::allocator<node>&) [25]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_allocate(unsigned int) [47]
+                0.00    0.00       3/4           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [46]
+                0.00    0.00       6/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+                0.00    0.00       3/3           __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::difference_type __gnu_cxx::operator-<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&) [59]
+                0.00    0.00       3/15          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back() [57]
+                0.00    0.00       3/13          __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [58]
+                0.00    0.00       3/917         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00       9/10          std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_get_Tp_allocator() [96]
+                0.00    0.00       3/4           void std::_Destroy<node*, node>(node*, node*, std::allocator<node>&) [101]
+-----------------------------------------------
+                0.04    0.00 21735075/43470150     __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::max_size() const [14]
+                0.04    0.00 21735075/43470150     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::base() const [17]
+[22]     6.0    0.07    0.00 43470150         __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator*() const [22]
+-----------------------------------------------
+                0.00    0.00       3/21920976     parse(std::string&) [1]
+                0.00    0.00   59940/21920976     node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+                0.07    0.00 21861033/21920976     node* std::copy<node*, node*>(node*, node*, node*) [12]
+[23]     6.0    0.07    0.00 21920976         node::operator=(node const&) [23]
+-----------------------------------------------
+                0.00    0.07       6/6           node* std::__uninitialized_move_a<node*, node*, std::allocator<node> >(node*, node*, node*, std::allocator<node>&) [25]
+[24]     5.9    0.00    0.07       6         node* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, node>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, std::allocator<node>&) [24]
+                0.00    0.07     140/911         node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*) [5]
+-----------------------------------------------
+                0.00    0.07       6/6           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[25]     5.9    0.00    0.07       6         node* std::__uninitialized_move_a<node*, node*, std::allocator<node> >(node*, node*, node*, std::allocator<node>&) [25]
+                0.00    0.07       6/6           node* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, node>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, std::allocator<node>&) [24]
+-----------------------------------------------
+                0.00    0.00       6/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::difference_type __gnu_cxx::operator-<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&) [59]
+                0.00    0.00       6/21734342     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.00      13/21734342     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::end() [54]
+                0.00    0.00      13/21734342     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back() [57]
+                0.06    0.00 21734304/21734342     node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [6]
+[26]     5.1    0.06    0.00 21734342         __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     5.0    0.00    0.06                 std::vector<node, std::allocator<node> >* std::__uninitialized_copy_a<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&) [27]
+                0.00    0.06     140/911         std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [7]
+-----------------------------------------------
+                0.03    0.02       3/3           std::vector<node, std::allocator<node> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [29]
+[28]     4.3    0.03    0.02       3         void std::_Construct<node, node>(node*, node const&) [28]
+                0.02    0.00 21801090/21861033     node::node(node const&) [34]
+                0.00    0.00       3/21861049     std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+-----------------------------------------------
+                0.00    0.05       6/6           node* std::uninitialized_copy<node*, node*>(node*, node*, node*) [30]
+[29]     4.3    0.00    0.05       6         std::vector<node, std::allocator<node> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [29]
+                0.03    0.02       3/3           void std::_Construct<node, node>(node*, node const&) [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     4.3    0.00    0.05                 node* std::uninitialized_copy<node*, node*>(node*, node*, node*) [30]
+                0.00    0.05       6/6           std::vector<node, std::allocator<node> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     3.0    0.00    0.04                 _fu9___ZSt4cout [31]
+                0.00    0.04       1/2           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+                0.00    0.00       1/784         std::vector<node, std::allocator<node> >::~vector() [11]
+-----------------------------------------------
+                0.00    0.00       3/21861049     void std::_Construct<node, node>(node*, node const&) [28]
+                0.00    0.00      13/21861049     __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [58]
+                0.00    0.00   59943/21861049     __gnu_cxx::new_allocator<node>::construct(node*, node const&) [36]
+                0.03    0.00 21801090/21861049     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::operator[](unsigned int) [19]
+[32]     2.6    0.03    0.00 21861049         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+-----------------------------------------------
+                0.00    0.00       3/59943       parse(std::string&) [1]
+                0.00    0.03   59940/59943       node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[33]     2.5    0.00    0.03   59943         std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+                0.00    0.02      70/70          std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.01    0.00   59873/59943       __gnu_cxx::new_allocator<node>::construct(node*, node const&) [36]
+                0.00    0.00      70/70          std::vector<node, std::allocator<node> >::end() [88]
+-----------------------------------------------
+                0.00    0.00   59943/21861033     __gnu_cxx::new_allocator<node>::new_allocator() [52]
+                0.02    0.00 21801090/21861033     void std::_Construct<node, node>(node*, node const&) [28]
+[34]     1.7    0.02    0.00 21861033         node::node(node const&) [34]
+-----------------------------------------------
+                0.00    0.02      70/70          std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+[35]     1.6    0.00    0.02      70         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.02      70/854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&) [10]
+                0.00    0.00     140/140         node* std::__uninitialized_copy_a<node*, node*, node>(node*, node*, node*, std::allocator<node>&) [49]
+                0.00    0.00      70/59943       __gnu_cxx::new_allocator<node>::construct(node*, node const&) [36]
+                0.00    0.00      70/21734406     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+                0.00    0.00      70/917         std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00     210/1765        std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator() [68]
+                0.00    0.00     140/280         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::operator*() const [84]
+                0.00    0.00      70/70          std::vector<node, std::allocator<node> >::begin() [89]
+                0.00    0.00      70/841         std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int) [74]
+                0.00    0.00      70/854         std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int) [72]
+-----------------------------------------------
+                0.00    0.00      70/59943       std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.01    0.00   59873/59943       std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+[36]     0.9    0.01    0.00   59943         __gnu_cxx::new_allocator<node>::construct(node*, node const&) [36]
+                0.00    0.00   59943/21861049     std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00     841/981         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator*() const [71]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.9    0.01    0.00                 bool __gnu_cxx::operator!=<node const*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&) [37]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.9    0.01    0.00                 std::basic_ios<char, std::char_traits<char> >::fail() const [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[39]     0.9    0.01    0.00                 std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[40]     0.5    0.00    0.01                 __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::~new_allocator() [40]
+                0.00    0.01      13/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+-----------------------------------------------
+                0.00    0.00       3/18          std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_allocate(unsigned int) [47]
+                0.00    0.00       3/18          std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [46]
+                0.00    0.00      12/18          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::begin() [42]
+[41]     0.3    0.00    0.00      18         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [41]
+                0.00    0.00      12/784         std::vector<node, std::allocator<node> >::~vector() [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.2    0.00    0.00                 std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::begin() [42]
+                0.00    0.00      12/18          __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[43]     0.1    0.00    0.00                 void std::_Construct<std::vector<node, std::allocator<node> >, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [43]
+                0.00    0.00       3/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+-----------------------------------------------
+                0.00    0.00      12/12          parse(std::string&) [1]
+[44]     0.1    0.00    0.00      12         str2int(std::string&) [44]
+                0.00    0.00      12/12          void std::_Destroy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&) [45]
+-----------------------------------------------
+                0.00    0.00      12/12          str2int(std::string&) [44]
+[45]     0.1    0.00    0.00      12         void std::_Destroy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&) [45]
+                0.00    0.00       4/784         std::vector<node, std::allocator<node> >::~vector() [11]
+-----------------------------------------------
+                0.00    0.00       1/4           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base() [51]
+                0.00    0.00       3/4           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[46]     0.0    0.00    0.00       4         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [46]
+                0.00    0.00       3/18          __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [41]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[47]     0.0    0.00    0.00       3         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_allocate(unsigned int) [47]
+                0.00    0.00       3/18          __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [41]
+-----------------------------------------------
+                0.00    0.00     140/140         node* std::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [50]
+[48]     0.0    0.00    0.00     140         node* std::__uninitialized_copy<false>::uninitialized_copy<node*, node*>(node*, node*, node*) [48]
+                0.00    0.00   66786/21801090     std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector() [15]
+-----------------------------------------------
+                0.00    0.00     140/140         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+[49]     0.0    0.00    0.00     140         node* std::__uninitialized_copy_a<node*, node*, node>(node*, node*, node*, std::allocator<node>&) [49]
+                0.00    0.00       6/6           node* std::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [50]
+-----------------------------------------------
+                0.00    0.00       6/6           node* std::__uninitialized_copy_a<node*, node*, node>(node*, node*, node*, std::allocator<node>&) [49]
+[50]     0.0    0.00    0.00       6         node* std::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [50]
+                0.00    0.00     140/140         node* std::__uninitialized_copy<false>::uninitialized_copy<node*, node*>(node*, node*, node*) [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector() [15]
+[51]     0.0    0.00    0.00       1         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base() [51]
+                0.00    0.00       1/4           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [46]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::~_Vector_impl() [108]
+-----------------------------------------------
+                                                 <spontaneous>
+[52]     0.0    0.00    0.00                 __gnu_cxx::new_allocator<node>::new_allocator() [52]
+                0.00    0.00   59943/21861033     node::node(node const&) [34]
+-----------------------------------------------
+                0.00    0.00       3/29          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+                0.00    0.00      13/29          parse(std::string&) [1]
+                0.00    0.00      13/29          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::end() [54]
+[53]     0.0    0.00    0.00      29         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int) [53]
+                0.00    0.00      16/21734406     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+-----------------------------------------------
+                                                 <spontaneous>
+[54]     0.0    0.00    0.00                 std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::end() [54]
+                0.00    0.00      13/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+                0.00    0.00      13/29          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int) [53]
+-----------------------------------------------
+[55]     0.0    0.00    0.00     917+219     <cycle 1 as a whole> [55]
+                0.00    0.00     987             std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00     143             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00       6             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+-----------------------------------------------
+                                   6             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+                                 140             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00      70/917         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.00     771/917         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+[56]     0.0    0.00    0.00     987         std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00      13/21734406     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+                0.00    0.00     210/123766      std::vector<node, std::allocator<node> >::size() const [63]
+                0.00    0.00      70/73          std::vector<node, std::allocator<node> >* std::__copy_move_backward_a2<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [87]
+                                  70             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+-----------------------------------------------
+                0.00    0.00       3/15          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.00      12/15          parse(std::string&) [1]
+[57]     0.0    0.00    0.00      15         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back() [57]
+                0.00    0.00      13/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+                0.00    0.00       3/21734406     __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+-----------------------------------------------
+                0.00    0.00       3/13          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.00      10/13          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+[58]     0.0    0.00    0.00      13         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [58]
+                0.00    0.00      13/21861049     std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [32]
+                0.00    0.00       3/9           __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::base() const [97]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[59]     0.0    0.00    0.00       3         __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::difference_type __gnu_cxx::operator-<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&) [59]
+                0.00    0.00       6/21734342     __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[60]     0.0    0.00    0.00                 std::vector<node, std::allocator<node> >::end() const [60]
+                0.00    0.00      70/917         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00      70/123766      std::vector<node, std::allocator<node> >::size() const [63]
+-----------------------------------------------
+                                                 <spontaneous>
+[61]     0.0    0.00    0.00                 std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_range_check(unsigned int) const [61]
+                0.00    0.00       3/917         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+                0.00    0.00       3/33          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const [90]
+-----------------------------------------------
+                0.00    0.00      70/123766      std::vector<node, std::allocator<node> >::end() const [60]
+                0.00    0.00     210/123766      std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00     734/123766      node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+                0.00    0.00    1542/123766      std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+                0.00    0.00   59050/123766      _fu5___ZSt4cout [266]
+                0.00    0.00   62160/123766      node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[63]     0.0    0.00    0.00  123766         std::vector<node, std::allocator<node> >::size() const [63]
+                0.00    0.00     771/1542        __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::__normal_iterator(std::vector<node, std::allocator<node> >* const&) [70]
+-----------------------------------------------
+                0.00    0.00    1464/120454      node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [3]
+                0.00    0.00   59050/120454      parse(std::string&) [1]
+                0.00    0.00   59940/120454      node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[64]     0.0    0.00    0.00  120454         std::vector<node, std::allocator<node> >::operator[](unsigned int) [64]
+-----------------------------------------------
+                0.00    0.00   59940/59940       node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [4]
+[65]     0.0    0.00    0.00   59940         node::calc(node&) [65]
+-----------------------------------------------
+                0.00    0.00   59940/59940       _fu13___ZSt4cout [260]
+[66]     0.0    0.00    0.00   59940         void std::_Destroy<std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*) [66]
+-----------------------------------------------
+                0.00    0.00   59940/59940       _fu13___ZSt4cout [260]
+[67]     0.0    0.00    0.00   59940         std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char) [67]
+-----------------------------------------------
+                0.00    0.00     210/1765        std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.00     771/1765        std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+                0.00    0.00     784/1765        std::vector<node, std::allocator<node> >::~vector() [11]
+[68]     0.0    0.00    0.00    1765         std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator() [68]
+-----------------------------------------------
+                0.00    0.00     841/1682        std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int) [74]
+                0.00    0.00     841/1682        std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int) [72]
+[69]     0.0    0.00    0.00    1682         __gnu_cxx::new_allocator<node>::allocate(unsigned int, void const*) [69]
+-----------------------------------------------
+                0.00    0.00     771/1542        std::vector<node, std::allocator<node> >::size() const [63]
+                0.00    0.00     771/1542        std::vector<node, std::allocator<node> >::capacity() const [80]
+[70]     0.0    0.00    0.00    1542         __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::__normal_iterator(std::vector<node, std::allocator<node> >* const&) [70]
+-----------------------------------------------
+                0.00    0.00     140/981         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00     841/981         __gnu_cxx::new_allocator<node>::construct(node*, node const&) [36]
+[71]     0.0    0.00    0.00     981         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator*() const [71]
+-----------------------------------------------
+                0.00    0.00      70/854         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.00     784/854         std::_Vector_base<node, std::allocator<node> >::~_Vector_base() [78]
+[72]     0.0    0.00    0.00     854         std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int) [72]
+                0.00    0.00     841/1682        __gnu_cxx::new_allocator<node>::allocate(unsigned int, void const*) [69]
+-----------------------------------------------
+                0.00    0.00     854/854         void std::_Destroy<node*>(node*, node*) [100]
+[73]     0.0    0.00    0.00     854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >) [73]
+-----------------------------------------------
+                0.00    0.00      70/841         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+                0.00    0.00     771/841         std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&) [83]
+[74]     0.0    0.00    0.00     841         std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int) [74]
+                0.00    0.00     841/1682        __gnu_cxx::new_allocator<node>::allocate(unsigned int, void const*) [69]
+-----------------------------------------------
+                0.00    0.00      13/797         std::allocator<node>::allocator() [91]
+                0.00    0.00     784/797         std::allocator<node>::~allocator() [76]
+[75]     0.0    0.00    0.00     797         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::destroy(std::vector<node, std::allocator<node> >*) [75]
+-----------------------------------------------
+                0.00    0.00     784/784         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::~_Vector_impl() [77]
+[76]     0.0    0.00    0.00     784         std::allocator<node>::~allocator() [76]
+                0.00    0.00     784/797         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::destroy(std::vector<node, std::allocator<node> >*) [75]
+-----------------------------------------------
+                0.00    0.00     784/784         std::_Vector_base<node, std::allocator<node> >::~_Vector_base() [78]
+[77]     0.0    0.00    0.00     784         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::~_Vector_impl() [77]
+                0.00    0.00     784/784         std::allocator<node>::~allocator() [76]
+-----------------------------------------------
+                0.00    0.00     784/784         std::vector<node, std::allocator<node> >::~vector() [11]
+[78]     0.0    0.00    0.00     784         std::_Vector_base<node, std::allocator<node> >::~_Vector_base() [78]
+                0.00    0.00     784/854         std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int) [72]
+                0.00    0.00     784/784         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::~_Vector_impl() [77]
+-----------------------------------------------
+                0.00    0.00     771/771         std::allocator<node>::allocator(std::allocator<node> const&) [81]
+[79]     0.0    0.00    0.00     771         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [79]
+-----------------------------------------------
+                0.00    0.00     771/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+[80]     0.0    0.00    0.00     771         std::vector<node, std::allocator<node> >::capacity() const [80]
+                0.00    0.00     771/1542        __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::__normal_iterator(std::vector<node, std::allocator<node> >* const&) [70]
+-----------------------------------------------
+                0.00    0.00     771/771         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl(std::allocator<node> const&) [82]
+[81]     0.0    0.00    0.00     771         std::allocator<node>::allocator(std::allocator<node> const&) [81]
+                0.00    0.00     771/771         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [79]
+-----------------------------------------------
+                0.00    0.00     771/771         std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&) [83]
+[82]     0.0    0.00    0.00     771         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl(std::allocator<node> const&) [82]
+                0.00    0.00     771/771         std::allocator<node>::allocator(std::allocator<node> const&) [81]
+-----------------------------------------------
+                0.00    0.00     771/771         std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&) [8]
+[83]     0.0    0.00    0.00     771         std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&) [83]
+                0.00    0.00     771/771         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl(std::allocator<node> const&) [82]
+                0.00    0.00     771/841         std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int) [74]
+-----------------------------------------------
+                0.00    0.00     140/280         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [16]
+                0.00    0.00     140/280         std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+[84]     0.0    0.00    0.00     280         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::operator*() const [84]
+-----------------------------------------------
+                                  70             std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                0.00    0.00       3/917         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+                0.00    0.00      70/917         std::vector<node, std::allocator<node> >::end() const [60]
+[85]     0.0    0.00    0.00     143         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00     140/981         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator*() const [71]
+                0.00    0.00       9/33          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const [90]
+                0.00    0.00       3/73          std::vector<node, std::allocator<node> >* std::__copy_move_backward_a2<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [87]
+                                 140             std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+                                   3             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+-----------------------------------------------
+                0.00    0.00      70/140         std::vector<node, std::allocator<node> >::end() [88]
+                0.00    0.00      70/140         std::vector<node, std::allocator<node> >::begin() [89]
+[86]     0.0    0.00    0.00     140         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::__normal_iterator(node const* const&) [86]
+-----------------------------------------------
+                0.00    0.00       3/73          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00      70/73          std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+[87]     0.0    0.00    0.00      73         std::vector<node, std::allocator<node> >* std::__copy_move_backward_a2<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [87]
+-----------------------------------------------
+                0.00    0.00      70/70          std::vector<node, std::allocator<node> >::push_back(node const&) [33]
+[88]     0.0    0.00    0.00      70         std::vector<node, std::allocator<node> >::end() [88]
+                0.00    0.00      70/140         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::__normal_iterator(node const* const&) [86]
+-----------------------------------------------
+                0.00    0.00      70/70          std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [35]
+[89]     0.0    0.00    0.00      70         std::vector<node, std::allocator<node> >::begin() [89]
+                0.00    0.00      70/140         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::__normal_iterator(node const* const&) [86]
+-----------------------------------------------
+                0.00    0.00       3/33          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_range_check(unsigned int) const [61]
+                0.00    0.00       9/33          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00      21/33          parse(std::string&) [1]
+[90]     0.0    0.00    0.00      33         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const [90]
+-----------------------------------------------
+                0.00    0.00      13/13          std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl() [92]
+[91]     0.0    0.00    0.00      13         std::allocator<node>::allocator() [91]
+                0.00    0.00      13/797         __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::destroy(std::vector<node, std::allocator<node> >*) [75]
+-----------------------------------------------
+                0.00    0.00      13/13          std::_Vector_base<node, std::allocator<node> >::_Vector_base() [93]
+[92]     0.0    0.00    0.00      13         std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl() [92]
+                0.00    0.00      13/13          std::allocator<node>::allocator() [91]
+-----------------------------------------------
+                0.00    0.00      13/13          std::vector<node, std::allocator<node> >::vector() [94]
+[93]     0.0    0.00    0.00      13         std::_Vector_base<node, std::allocator<node> >::_Vector_base() [93]
+                0.00    0.00      13/13          std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl() [92]
+-----------------------------------------------
+                0.00    0.00      13/13          parse(std::string&) [1]
+[94]     0.0    0.00    0.00      13         std::vector<node, std::allocator<node> >::vector() [94]
+                0.00    0.00      13/13          std::_Vector_base<node, std::allocator<node> >::_Vector_base() [93]
+-----------------------------------------------
+                0.00    0.00      13/13          parse(std::string&) [1]
+[95]     0.0    0.00    0.00      13         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::pop_back() [95]
+-----------------------------------------------
+                0.00    0.00       1/10          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+                0.00    0.00       9/10          std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[96]     0.0    0.00    0.00      10         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_get_Tp_allocator() [96]
+-----------------------------------------------
+                0.00    0.00       3/9           __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [58]
+                0.00    0.00       6/9           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+[97]     0.0    0.00    0.00       9         __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::base() const [97]
+-----------------------------------------------
+                                   3             std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const <cycle 1> [85]
+                0.00    0.00       3/917         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_range_check(unsigned int) const [61]
+[98]     0.0    0.00    0.00       6         std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const <cycle 1> [98]
+                0.00    0.00       6/9           __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::base() const [97]
+                                   6             std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const <cycle 1> [56]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<node*, node>(node*, node*, std::allocator<node>&) [101]
+[99]     0.0    0.00    0.00       4         void std::_Destroy_aux<false>::__destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [99]
+                0.00    0.00       4/4           void std::_Destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [102]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [102]
+[100]    0.0    0.00    0.00       4         void std::_Destroy<node*>(node*, node*) [100]
+                0.00    0.00     854/854         void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >) [73]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::vector() [193]
+                0.00    0.00       3/4           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&) [21]
+[101]    0.0    0.00    0.00       4         void std::_Destroy<node*, node>(node*, node*, std::allocator<node>&) [101]
+                0.00    0.00       4/4           void std::_Destroy_aux<false>::__destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [99]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy_aux<false>::__destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [99]
+[102]    0.0    0.00    0.00       4         void std::_Destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [102]
+                0.00    0.00       4/4           void std::_Destroy<node*>(node*, node*) [100]
+-----------------------------------------------
+                0.00    0.00       3/3           parse(std::string&) [1]
+[103]    0.0    0.00    0.00       3         node::node(char const*, int) [103]
+-----------------------------------------------
+                0.00    0.00       1/2           std::allocator<std::vector<node, std::allocator<node> > >::allocator() [105]
+                0.00    0.00       1/2           std::allocator<std::vector<node, std::allocator<node> > >::~allocator() [106]
+[104]    0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator++() [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::_Vector_impl() [107]
+[105]    0.0    0.00    0.00       1         std::allocator<std::vector<node, std::allocator<node> > >::allocator() [105]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator++() [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::~_Vector_impl() [108]
+[106]    0.0    0.00    0.00       1         std::allocator<std::vector<node, std::allocator<node> > >::~allocator() [106]
+                0.00    0.00       1/2           __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator++() [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_base() [109]
+[107]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::_Vector_impl() [107]
+                0.00    0.00       1/1           std::allocator<std::vector<node, std::allocator<node> > >::allocator() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base() [51]
+[108]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::~_Vector_impl() [108]
+                0.00    0.00       1/1           std::allocator<std::vector<node, std::allocator<node> > >::~allocator() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&) [20]
+[109]    0.0    0.00    0.00       1         std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_base() [109]
+                0.00    0.00       1/1           std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::_Vector_impl() [107]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+   [1] parse(std::string&)    [90] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::size() const [8] std::vector<node, std::allocator<node> >::vector(std::vector<node, std::allocator<node> > const&)
+  [44] str2int(std::string&)  [98] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::max_size() const [94] std::vector<node, std::allocator<node> >::vector()
+  [65] node::calc(node&)      [38] std::basic_ios<char, std::char_traits<char> >::fail() const [11] std::vector<node, std::allocator<node> >::~vector()
+   [3] node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&) [81] std::allocator<node>::allocator(std::allocator<node> const&) [64] std::vector<node, std::allocator<node> >::operator[](unsigned int)
+   [4] node::calc(std::vector<node, std::allocator<node> >&, std::vector<node, std::allocator<node> >&, int, std::string) [91] std::allocator<node>::allocator() [21] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_insert_aux(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >, std::vector<node, std::allocator<node> > const&)
+ [103] node::node(char const*, int) [76] std::allocator<node>::~allocator() [53] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::at(unsigned int)
+  [34] node::node(node const&) [105] std::allocator<std::vector<node, std::allocator<node> > >::allocator() [57] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::back()
+  [13] node::node(std::string&, int, char) [106] std::allocator<std::vector<node, std::allocator<node> > >::~allocator() [95] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::pop_back()
+  [23] node::operator=(node const&) [9] void std::_Destroy_aux<false>::__destroy<node*>(node*, node*) [20] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::push_back(std::vector<node, std::allocator<node> > const&)
+  [69] __gnu_cxx::new_allocator<node>::allocate(unsigned int, void const*) [99] void std::_Destroy_aux<false>::__destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [15] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~vector()
+  [36] __gnu_cxx::new_allocator<node>::construct(node*, node const&) [74] std::_Vector_base<node, std::allocator<node> >::_M_allocate(unsigned int) [19] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::operator[](unsigned int)
+  [79] __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [82] std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl(std::allocator<node> const&) [28] void std::_Construct<node, node>(node*, node const&)
+  [75] __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::destroy(std::vector<node, std::allocator<node> >*) [92] std::_Vector_base<node, std::allocator<node> >::_Vector_impl::_Vector_impl() [5] node* std::__copy_move_a2<false, node*, node*>(node*, node*, node*)
+  [41] __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::allocate(unsigned int, void const*) [77] std::_Vector_base<node, std::allocator<node> >::_Vector_impl::~_Vector_impl() [50] node* std::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*)
+  [58] __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::construct(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > const&) [72] std::_Vector_base<node, std::allocator<node> >::_M_deallocate(node*, unsigned int) [7] std::vector<node, std::allocator<node> >* std::__copy_move_backward_a<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+ [104] __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator++() [68] std::_Vector_base<node, std::allocator<node> >::_M_get_Tp_allocator() [24] node* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, node>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*, std::allocator<node>&)
+  [86] __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::__normal_iterator(node const* const&) [83] std::_Vector_base<node, std::allocator<node> >::_Vector_base(unsigned int, std::allocator<node> const&) [49] node* std::__uninitialized_copy_a<node*, node*, node>(node*, node*, node*, std::allocator<node>&)
+  [70] __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::__normal_iterator(std::vector<node, std::allocator<node> >* const&) [93] std::_Vector_base<node, std::allocator<node> >::_Vector_base() [25] node* std::__uninitialized_move_a<node*, node*, std::allocator<node> >(node*, node*, node*, std::allocator<node>&)
+  [16] __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::difference_type __gnu_cxx::operator-<node*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > const&) [78] std::_Vector_base<node, std::allocator<node> >::~_Vector_base() [87] std::vector<node, std::allocator<node> >* std::__copy_move_backward_a2<false, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  [59] __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::difference_type __gnu_cxx::operator-<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >(__gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&, __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > > const&) [47] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_allocate(unsigned int) [12] node* std::copy<node*, node*>(node*, node*, node*)
+  [37] bool __gnu_cxx::operator!=<node const*, std::vector<node, std::allocator<node> > >(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > > const&) [107] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::_Vector_impl() [73] void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > > >(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >)
+  [18] __gnu_cxx::new_allocator<node>::max_size() const [108] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_impl::~_Vector_impl() [10] void std::_Destroy<__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node>(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, std::allocator<node>&)
+  [14] __gnu_cxx::new_allocator<std::vector<node, std::allocator<node> > >::max_size() const [46] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_deallocate(std::vector<node, std::allocator<node> >*, unsigned int) [100] void std::_Destroy<node*>(node*, node*)
+  [17] __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::base() const [96] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_get_Tp_allocator() [101] void std::_Destroy<node*, node>(node*, node*, std::allocator<node>&)
+  [71] __gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >::operator*() const [109] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_Vector_base() [102] void std::_Destroy<std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*)
+  [97] __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::base() const [51] std::_Vector_base<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::~_Vector_base() [45] void std::_Destroy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::allocator<std::vector<node, std::allocator<node> > >&)
+  [84] __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >::operator*() const [6] node* std::__uninitialized_copy<false>::uninitialized_copy<__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*>(__gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, __gnu_cxx::__normal_iterator<node const*, std::vector<node, std::allocator<node> > >, node*) [66] void std::_Destroy<std::vector<node, std::allocator<node> > >(std::vector<node, std::allocator<node> >*)
+  [22] __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator*() const [48] node* std::__uninitialized_copy<false>::uninitialized_copy<node*, node*>(node*, node*, node*) [39] std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [26] __gnu_cxx::__normal_iterator<std::vector<node, std::allocator<node> >*, std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > > >::operator-(int const&) const [29] std::vector<node, std::allocator<node> >* std::__uninitialized_copy<false>::uninitialized_copy<std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*>(std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*, std::vector<node, std::allocator<node> >*) [67] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char)
+  [56] std::vector<node, std::allocator<node> >::_M_check_len(unsigned int, char const*) const [35] std::vector<node, std::allocator<node> >::_M_insert_aux(__gnu_cxx::__normal_iterator<node*, std::vector<node, std::allocator<node> > >, node const&) [32] std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [63] std::vector<node, std::allocator<node> >::size() const [88] std::vector<node, std::allocator<node> >::end() [55] <cycle 1>
+  [80] std::vector<node, std::allocator<node> >::capacity() const [89] std::vector<node, std::allocator<node> >::begin()
+  [85] std::vector<std::vector<node, std::allocator<node> >, std::allocator<std::vector<node, std::allocator<node> > > >::_M_check_len(unsigned int, char const*) const [33] std::vector<node, std::allocator<node> >::push_back(node const&)
